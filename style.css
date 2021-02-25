@@ -1,0 +1,425 @@
+.body {
+    font-family: serif, Georgia, Times, 'Times New Roman', ;
+    width: auto;
+    height: auto;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding-bottom: 1vw;
+    background-image: linear-gradient(#60777A, rgb(255, 255, 255), rgb(177, 158, 180), rgb(85, 66, 88));
+ 
+}
+
+/*image of the LOGO*/
+#weather-image{
+    width: 50px;
+    padding-bottom: 12px;
+}
+.front-logo {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*Which flavour icecream do you require?*/
+.legend {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: thistle;
+    
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px -3px #000000, 1px 3px 11px 4px rgba(0,0,0,0), 3px 3px 9px 3px rgba(0,0,0,0);
+
+}
+
+/*name and adress flexbox settings*/
+.info-user {
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+/*here this is again the commande 'flexbox' for the ice cream scoops and the select button*/
+.scoops {
+   
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient( rgb(177, 158, 180), rgb(85, 66, 88));
+    
+
+}
+
+.block-ice{
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 50%;
+    background-color: thistle;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+            -1px 2px 20px rgba(255, 255, 255, 0.6) inset; 
+}
+
+
+.titlt-ice {
+   
+    min-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    border-radius: 45%;
+    margin-bottom: -10px;
+   
+}
+    .zero{
+        width: 3vw;
+        border-style: groove;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .submitclick {
+        font-size: x-large;
+        color:rgb(112, 82, 221); background-color:rgb(193, 223, 224); 
+        animation: allblink 0.5s infinite;
+        padding: 0.5vw;
+        display: flex;
+        justify-content: center;
+        letter-spacing: .1rem;
+        border: solid 1px, rgb(192, 192, 192);
+        border-radius: 4px;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 2px 6px -3px #000000, 1px 3px 11px 4px rgba(0,0,0,0), 3px 3px 9px 3px rgba(0,0,0,0);
+
+    }
+    @keyframes allblink { 
+        0% { }
+        50% { color:rgb(104, 36, 104); background-color:rgb(204, 152, 200); } 
+        }
+    /*result of informations from radio buttom -> configured on J.s*/
+    .info {
+         
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+       
+    }
+    .return-scoops{
+        
+        border: solid 1.5px;
+        border-radius: 8px;
+        width: auto;
+        height: auto;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        background-color: rgb(118, 149, 173, 0.5);
+        box-shadow: 0px 2px 6px -3px #000000, 1px 3px 11px 4px rgba(0,0,0,0), 3px 3px 9px 3px rgba(0,0,0,0);
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    .return-user{
+    
+        border: solid 1.5px;
+        border-radius: 8px;
+        width: auto;
+        height: auto;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        background-color: rgb(118, 149, 173, 0.5);
+        box-shadow: 0px 2px 6px -3px #000000, 1px 3px 11px 4px rgba(0,0,0,0), 3px 3px 9px 3px rgba(0,0,0,0);
+        margin-right: 2vw;
+        margin-left: 2vw;
+      
+    }
+    .outputname{
+        font-size: medium, #000000,;
+        width: auto;
+        height: auto; 
+        text-align: center;
+        padding-bottom: 4px;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        text-align: center;
+        padding-bottom: 4px;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        padding-right: 2vz;
+        padding-left: 2vw;
+        
+    }
+
+/*----------------CSSforWeatherApp----------------*/
+
+*{
+    font-family: "Rimouski";
+}
+
+.top{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container{
+    
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0px 50px 50px 0px;
+    padding-bottom : 50px;
+}
+
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    background-color: #F4F9FF;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+.button-weather{
+    width: 80px;
+    letter-spacing: 2px;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    background-color: #F4F9FF;
+    border: none;
+
+}
+/*resonsive design add for smart-phone*/
+@media screen and (max-width: 999px) {
+
+    .body {
+       
+        background-image: linear-gradient(#60777A, rgb(255, 255, 255),rgb(255, 255, 255),rgb(177, 158, 180), rgb(177, 158, 180), rgb(85, 66, 88));
+     
+    }
+    
+    .scoops {
+        background-color: rgb(118, 149, 173);
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    
+    }
+    .block-ice {
+       
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vw;
+        border-radius: 50%;
+    }
+
+    .exkimo-logo {
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+
+    .scoops {
+
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .info-user {
+        text-align: center;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .name-adress {
+
+        display: flex;
+        justify-content: space-around;
+
+}
+.info {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    padding: 1vw;
+    padding-bottom: 2vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    
+}
+.return-scoops{
+      
+  margin-bottom: 2vw;
+}
+
+.outputname{
+    
+
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-bottom: 4px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    
+}
+.zero{
+    width: 6vw;
+    border-style: groove;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/*----------------CSSforWeatherApp----------------*/
+
+*{
+    font-family: "Rimouski";
+}
+
+
+
+.container{
+    display: none;
+    text-align: center;
+    border-radius: 0px 50px 50px 0px;
+    padding-bottom : 50px;
+    position: relative;
+    z-index: 100;
+    background-color: #FFF;
+    text-align: center;
+    
+}
+.button-weather{
+    width: 80px;
+    letter-spacing: 2px;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    background-color: #F4F9FF;
+    border: none;
+
+}
+}/*----------------end of the flex screen line----------------*/
+
+/*submtclicK*/
+

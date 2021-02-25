@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>glaces-exkimo</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+</head>
+
+<div class="body">
+
+    
+<body style="font-family: 'Roboto', sans-serif">
+    <div class="top">
+        <button class="button-weather" onclick =showWeather() ><img id="weather-image" src="icons/01d.png">Show Weather</button>
+        <div id="myDIV" class="container">
+            <div class="app-title"><p>Weather</p></div>
+            <div class="notification"> </div>
+            <div class="weather-container">
+                <div class="weather-icon"><img src="icons/unknown.png" alt=""></div>
+                <div class="temperature-value"><p>- °<span>C</span></p></div>
+                <div class="temperature-description"><p> - </p></div>
+                <div class="location"><p>-</p></div>
+            </div>
+        </div>
+        <div class="front-logo"><img id="exkimo-logo" src="img/exkimo-logo.png" class="exkimo-logo" alt="exkimo-logo "></div>
+   </div>
+            <div class="legend">
+                <legend>Which flavour icecream do you require?</legend>
+            </div>
+
+            <div class="scoops">
+
+                <div class="block-ice"> <p class="titlt-ice">Strawberry</p> <br>
+                    <img id="glace-fraise" src="img/glace-fraise.png" alt="glace-fraise"> <br>
+                    <label for="strawberry"></label> <input id="inputname1" type="number" name="icecream" class=zero
+                        value="0" min="0" max="9"> </label>
+
+
+                </div>
+                <div class="block-ice"> <p class="titlt-ice">Banana</p> <br>
+                    <img id="glace-banane" src="img/glace-banane.png" alt="glace-banane"> <br>
+                    <label for="banana"></label> <input id="inputname2" type="number" name="icecream" class=zero
+                        value="0" min="0" max="9">
+                    </label>
+                </div>
+
+                <div class="block-ice"> <p class="titlt-ice">Blueberry</p> <br>
+                    <img id="glace-myrtille" src="img/glace-myrtille.png" alt="glace-myrtille"> <br>
+                    <label for="blueberry"></label> <input id="inputname3" type="number" name="icecream" class=zero
+                        value="0" min="0" max="9"> </label>
+                </div>
+
+            </div>
+            <hr>
+
+
+            <p>
+                <div class="info-user">
+                    <p><label>&nbsp; Name <input id="inputname4" type="text" name="customer_name" value="" maxlength="14"></label></p>
+                    <p><label>&nbsp; Adress <input id="inputname5" type="text" name="customer_adress" value="" maxlength="20" ></label></p>    
+                    <p><label>&nbsp; Email <input id="inputname6" type="text" name="customer_email" value="" maxlength="30"></label> </p>
+                    <p><label>&nbsp; Phone <input id="inputname7" type="text" name="customer_phone" value="" minlength="9" maxlength="9"></label></p>
+                </div>
+            </p>
+
+        </form>
+
+        <div id="resultTel" style="display: block">
+            <p id="resultValue"> </p>
+            <hr>
+
+
+        </div>
+        <button class=submitclick type="submit" onclick="showName()">Submit Booking</button>
+        <div class="info">
+           <div class=return-scoops>
+                
+                <!--strawberry-->
+                <p class="outputname" type id="outputname1">
+                    <br>
+                </p>
+                <!--banana-->
+                <p class="outputname" id="outputname2">
+                    <br>
+                </p>
+                <!--Strawberry-->
+                <p class="outputname" id="outputname3">
+               
+            </p>
+            <!--Strawberry-->
+            <p class="outputname" id="outputnametotal">
+            </div>
+                
+            <div class=return-user>
+                </p>
+                <!--Name-->
+                <p class="outputname" id="outputname4">
+                    <br>
+                </p>
+                <!--adress-->
+                <p class="outputname" id="outputname5">
+                </p>
+                <!--email-->
+                <p class="outputname" id="outputname6">
+                </p>
+                <!--phone-->
+                <p class="outputname" id="outputname7">
+                </p>
+            </div>
+
+        </div>
+</div>
+
+
+<script defer src="JS.js"></script>
+<script defer src="appWeather.js"></script>
+
+</body>
+
+</html>
